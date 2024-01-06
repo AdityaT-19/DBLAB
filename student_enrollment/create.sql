@@ -1,3 +1,4 @@
+-- Active: 1700499878468@@127.0.0.1@3306@student_enrollment
 CREATE DATABASE student_enrollment;
 
 USE student_enrollment;

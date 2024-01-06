@@ -1,4 +1,4 @@
--- Active: 1698830877738@@127.0.0.1@3306@sailors
+-- Active: 1700499878468@@127.0.0.1@3306@sailors
 CREATE DATABASE sailors;
 
 USE sailors;
