@@ -1,5 +1,5 @@
 -- List the Order# and Ship Date for all orders shipped from Warehouse 0002.
-
+USE order_processing;
 SELECT orderid,ship_date
 FROM shipment
 WHERE warehouse = 0002;
@@ -21,8 +21,8 @@ WHERE orderid in (
 -- Produce a listing : Cnamee ,#ofOrders,AvG_oRDER_aMT  where middle COLUMN is the total number of orders by the customer andf the last is the average  order amount for that customer
 
 SELECT cname,COUNT(orderid) as NPoofOrder, AVG(order_amt) as Avg_Order_Amt 
-FROM customer 
-NATURAL JOIN order_
+FROM customer c
+Left JOIN order_ o on c.cust = o.cust
 group by cname;
 
 
